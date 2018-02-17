@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.2.1
+- Changed license from Apache-2.0 to MIT and added LICENSE file
+
 ## v2.2.0
 - Disabled https on webpack-dev-server as it was causing some issues, you can reenable by adding `https: true` to the webpack-dev-server options in `webpack.config.dev.js`
 - Created base webpack configuration to extend from
