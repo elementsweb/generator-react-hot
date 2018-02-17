@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.2.2
+- Add travis build file to run tests automatically on commit
+- Link to LICENSE in README
+
 ## v2.2.1
 - Changed license from Apache-2.0 to MIT and added LICENSE file
 
