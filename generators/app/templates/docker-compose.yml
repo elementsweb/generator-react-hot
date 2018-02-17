@@ -1,0 +1,7 @@
+web:
+  image: react-application
+  volumes:
+    - /etc/ssl/private/nginx-selfsigned.key:/etc/ssl/private/nginx-selfsigned.key
+    - /etc/ssl/certs/nginx-selfsigned.crt:/etc/ssl/certs/nginx-selfsigned.crt
+  ports:
+    - "443:443"
