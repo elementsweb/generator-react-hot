@@ -3,7 +3,17 @@
 
 Yeoman generator to provide the scaffolding for a React app with hot reloading.
 
-Supports using SCSS to style components.
+Generated app has the following features:
+
+- Hot reloading for React
+- Transpilation with Babel to support older browsers
+- Linting using ESLint, extending from the `airbnb` config
+- Dockerfile to spin up an nginx server with built code
+- Jest and Enzyme setup for testing
+- .gitignore file to prevent accidentally pushing unnecessary files
+- Development and production webpack configurations, extending from a base configuration
+- Injects resources into index.html file on build
+- Support for SCSS and CSS for styling
 
 ## Installation
 Install generator-react-hot with npm scoped package:
@@ -20,6 +30,8 @@ yo @j154004/react-hot
 ```
 
 Answer the questions asked by the generator, these answers will be injected into various files that will be created in your directory.
+
+All the dependencies required to run the application will be installed automatically.
 
 ### Options
 - `--skip-welcome` - Skips welcome greeting before displaying options.
