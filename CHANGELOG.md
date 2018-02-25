@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.2.3
+- Fix plugin injection into production webpack config
+
 ## v2.2.2
 - Add travis build file to run tests automatically on commit
 - Link to LICENSE in README

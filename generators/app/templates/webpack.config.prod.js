@@ -29,7 +29,7 @@ baseConfig.module.rules.push({
   }),
 });
 
-baseConfig.plugins.concat([
+baseConfig.plugins.push(
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify('production'),
   }),
@@ -37,6 +37,6 @@ baseConfig.plugins.concat([
   new ExtractTextPlugin({
     filename: '[name].css',
   }),
-]);
+);
 
 module.exports = baseConfig;
