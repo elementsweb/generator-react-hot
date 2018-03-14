@@ -36,6 +36,11 @@ All the dependencies required to run the application will be installed automatic
 ### Options
 - `--skip-welcome` - Skips welcome greeting before displaying options.
 
+### Getting Started
+- Start by running the hot reloading development server with `npm start`. 
+- Navigate to `http://localhost:PORT` in your browser, where `PORT` is the one you chose when running the generator. You should see the words "Hello, world!" printed on the page.
+- Change the text inside the `<div>` element in `src/App.js` and notice the text change in the browser when you save your changes.
+
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b feature/new-feature`

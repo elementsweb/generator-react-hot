@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.2.4
+- Added repository to package.json
+- Added "Getting Started" section to README
+
 ## v2.2.3
 - Fix plugin injection into production webpack config
 
