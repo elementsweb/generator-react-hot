@@ -51,6 +51,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: '<%= repositoryName %>',
       template: 'index.html',
-    }),
+    })
   ],
 };

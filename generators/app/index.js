@@ -36,7 +36,8 @@ module.exports = class extends Generator {
         // ensure package name is npm friendly
         const words = input.toLowerCase().split(' ');
         return words.join('-');
-      }
+      },
+      default: process.cwd().split('/').pop(),
     }, {
       name: 'repositoryUrl',
       message: 'What is your project repository URL?',

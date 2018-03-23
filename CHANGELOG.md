@@ -1,4 +1,18 @@
 # Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [2.2.5] - 2018-03-23
+### Changed
+- Repository name now defaults to the name of the current working directory the generator is run in
+- Updated changelog format based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+
+### Fixed
+- Remove trailing commas which may cause issues with older versions of Node.js
 
 ## v2.2.4
 - Added repository to package.json

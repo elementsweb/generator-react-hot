@@ -3,12 +3,16 @@ var helpers = require('yeoman-test');
 var path = require('path');
 
 describe('concourse-resource:app', () => {
+  let cwdName; // directory generator is being run in
+
   before(done => {
     helpers.run(path.join(__dirname, '../generators/app'))
+      .inTmpDir((dir) => {
+        cwdName = dir.split('/').pop();
+      })
       .withPrompts({
         authorName: 'elementsweb',
         authorEmail: 'example@company.com',
-        repositoryName: 'example-project',
         repositoryUrl: 'example@git',
         description: 'Hello world!'
       })
@@ -50,14 +54,14 @@ describe('concourse-resource:app', () => {
   });
 
   it('populates README file', () => {
-    assert.fileContent('README.md', 'example-project');
+    assert.fileContent('README.md', 'app');
     assert.fileContent('README.md', 'Hello world!');
     assert.fileContent('README.md', '2017 elementsweb');
   });
 
   it('populates package.json file', () => {
     assert.jsonFileContent('package.json', {
-      name: 'example-project',
+      name: cwdName,
       description: 'Hello world!',
       repository: {
         url: 'example@git'
@@ -68,4 +72,10 @@ describe('concourse-resource:app', () => {
       }
     });
   });
+
+  it('has defaulted "repositoryName" to the name of the current directory', () => {
+    assert.jsonFileContent('package.json', {
+      name: cwdName
+    });
+  })
 });

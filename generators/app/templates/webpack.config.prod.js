@@ -36,7 +36,7 @@ baseConfig.plugins.push(
 
   new ExtractTextPlugin({
     filename: '[name].css',
-  }),
+  })
 );
 
 module.exports = baseConfig;
