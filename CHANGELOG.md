@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.2.6] - 2018-04-05
+### Bugfix
+- Attempt to resolve issue when installing previous version of module
+
 ## [2.2.5] - 2018-03-23
 ### Changed
 - Repository name now defaults to the name of the current working directory the generator is run in

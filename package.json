@@ -1,6 +1,6 @@
 {
   "name": "@j154004/generator-react-hot",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "description": "Yeoman generator to provide the scaffolding for a hot reloading React application",
   "repository": {
     "type": "git",
